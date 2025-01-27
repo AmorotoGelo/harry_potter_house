@@ -1,18 +1,15 @@
 print("WELCOME TO HOGWARTS SCHOOL OF WITCHCRAFT AND WIZARDRY")
-
 gryffindor = []
 ravenclaw = []
 slytherin = []
 hufflepuff = []
-
 while True:
 
     input_name = input("What is your name?: ")
-    if input_name.endswith("a") or input_name.endswith("A"):
-        print(" MUGGLE! You are not on the masterlist")
-        break
-    else:
-        movie_genre = input("What movie genre you like?: ")
+    if not input_name.endswith("a") or input_name.endswith("A"):
+        print("Welcome! You may proceed: ")
+        
+        movie_genre = input("What is your favorite movie genre?: ")
 
         if movie_genre == "action":
             gryffindor.append(input_name)
@@ -25,7 +22,6 @@ while True:
         else:
             print("Choose among horror, action, science fiction, and drama only")  
 
-        
         animal = input("Which animal would you like to be a pet?: ")
 
         if animal == "cat":
@@ -37,6 +33,10 @@ while True:
         elif animal == "rat":
             hufflepuff.append(input_name)
         else:
-            print("Choose among cat, owl, toad, or cat: ")                
+            print("Choose among cat, owl, toad, or cat: ")   
+
+    else:
+        print("MUGGLE! YOU ARE NOT WELCOME!!!")
+        break
         
 
