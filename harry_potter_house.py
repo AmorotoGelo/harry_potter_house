@@ -34,8 +34,7 @@ while True:
             hufflepuff.append(input_name)
         else:
             print("Choose among cat, owl, toad, or cat!")
-
-               
+      
         personality = input("Are you shy, confident, friendly, or arrogant?: ")
 
         if personality == "confident":
@@ -50,8 +49,19 @@ while True:
             print("Choose among the given choices!")   
 
         if ravenclaw > gryffindor or ravenclaw > slytherin or ravenclaw > hufflepuff:
-          print("CONGRAATULATIONS WIZARD: You are RAVENCLAW!")    
+          print(ravenclaw, "CONGRAATULATIONS WIZARD: You are RAVENCLAW!")
           break    
+        elif gryffindor > ravenclaw or gryffindor > slytherin or gryffindor > hufflepuff:
+          print(gryffindor, "CONGRAATULATIONS WIZARD: You are GRYFFINDOR!")
+          break
+        elif slytherin > ravenclaw or slytherin > gryffindor or slytherin > hufflepuff:
+          print(slytherin, "CONGRAATULATIONS WIZARD: You are SLYTHERIN!")
+          break
+        elif hufflepuff > ravenclaw or hufflepuff > gryffindor or hufflepuff > slytherin:
+          print(hufflepuff, "CONGRAATULATIONS WIZARD: You are HUFFLEPUFF!")
+          break
+        else:
+            print("WOW! YOU ARE A JACK OF ALL TRADES, YOU'RE WELCOME TO ANY HOUSES!")
     
     else:
         print("MUGGLE! YOU ARE NOT WELCOME!!!")
