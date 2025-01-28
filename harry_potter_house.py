@@ -61,3 +61,15 @@ while True:
          break
         else:
             print("Choose among the given choices!")
+
+    house_points = {
+        "Gryffindor": gryffindor,
+        "Ravenclaw": ravenclaw,
+        "Slytherin": slytherin,
+        "Hufflepuff": hufflepuff
+    }
+
+    sorted_house = max(house_points)
+    print("CONGRATULATIONS!! YOU ARE.....")
+    print(sorted_house)
+    break
