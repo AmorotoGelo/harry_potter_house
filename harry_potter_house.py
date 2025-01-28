@@ -1,4 +1,9 @@
-print("WELCOME TO HOGWARTS SCHOOL OF WITCHCRAFT AND WIZARDRY")
+import pyfiglet
+
+def harry_potter_font(text):
+  return pyfiglet.figlet_format(text, font="slant")
+print(harry_potter_font("WELCOME TO HOGWARTS SCHOOL OF WITCHCRAFT AND WIZARDRY"))
+
 gryffindor = 0
 ravenclaw = 0
 slytherin = 0
@@ -126,8 +131,8 @@ with open("hogwarts_house_result.txt", "a") as file:
     }
 
     sorted_house = max(house_points, key=house_points.get)
-    print("CONGRATULATIONS!! YOU ARE.....")
-    print(sorted_house)
+    print(harry_potter_font("CONGRATULATIONS!! YOU ARE....."))
+    print(harry_potter_font(sorted_house))
     file.write(f"Sorted House: {sorted_house}\n")
 
     while True:
