@@ -69,7 +69,7 @@ while True:
         "Hufflepuff": hufflepuff
     }
 
-    sorted_house = max(house_points)
+    sorted_house = max(house_points, key=house_points.get)
     print("CONGRATULATIONS!! YOU ARE.....")
     print(sorted_house)
     break
