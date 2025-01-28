@@ -17,7 +17,7 @@ with open("hogwarts_house_result.txt", "a") as file:
     file.write(f"Student name: {input_name}\n")
 
     while True:
-      movie_genre = input("What is your favorite movie genre?: ")
+      movie_genre = input("What is your favorite movie genre?: ").lower()
 
       if movie_genre in ["action", "science fiction", "horror", "drama"]:
         if movie_genre == "action":
@@ -34,7 +34,7 @@ with open("hogwarts_house_result.txt", "a") as file:
         print("Choose among horror, action, science fiction, and drama only!")  
 
     while True:
-      animal = input("Which animal would you like to be a pet?: ")
+      animal = input("Which animal would you like to be a pet?: ").lower()
 
       if animal in ["cat", "owl", "toad", "rat"]:
         if animal == "cat":
@@ -51,7 +51,7 @@ with open("hogwarts_house_result.txt", "a") as file:
         print("Choose among cat, owl, toad, or cat!")
 
     while True:
-      personality = input("Are you shy, confident, friendly, or arrogant?: ")
+      personality = input("Are you shy, confident, friendly, or arrogant?: ").lower()
 
       if personality in ["confident", "shy", "arrogant", "friendly"]:
         if personality == "confident":
@@ -68,7 +68,7 @@ with open("hogwarts_house_result.txt", "a") as file:
         print("Choose among the given choices!")
 
     while True:
-      attribute = input("Do you rather be brave, smart, patient, or ambitious?: ")
+      attribute = input("Do you rather be brave, smart, patient, or ambitious?: ").lower()
 
       if attribute in ["brave", "smart", "patient", "ambitious"]:
         if attribute == "brave":
@@ -85,7 +85,7 @@ with open("hogwarts_house_result.txt", "a") as file:
         print("Choose among the choices!") 
 
     while True:
-      quidditch = input("Which position would you most likely to play? bludger, keeper, seeker, or chaser: ")
+      quidditch = input("Which position would you most likely to play? bludger, keeper, seeker, or chaser: ").lower()
 
       if quidditch in ["bludger", "keeper", "seeker", "chaser"]:
         if quidditch == "bludger":
@@ -102,16 +102,16 @@ with open("hogwarts_house_result.txt", "a") as file:
         print("Choose among the choices!")
 
     while True:
-      character = input("Who would you rather be? Snape, Cedric, Hagrid, or Luna?: ")
+      character = input("Who would you rather be? Snape, Cedric, Hagrid, or Luna?: ").capitalize()
 
       if character in ["hagrid", "Luna", "Snape", "Cedric"]:
-        if character == "hagrid":
+        if character == "Hagrid":
           gryffindor += 1
         if character == "Luna":
           ravenclaw += 1
         if character == "Snape":
           slytherin += 1
-        if character == "cedric":
+        if character == "Cedric":
           hufflepuff += 1
         file.write(f"Fave character: {character}\n")
         break  
