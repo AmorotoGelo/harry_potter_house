@@ -104,7 +104,7 @@ while True:
             ravenclaw += 1
           if character == "Snape":
             slytherin += 1
-          if character == "Cedric":
+          if character == "cedric":
             hufflepuff += 1
           break  
         else:
@@ -120,4 +120,14 @@ while True:
     sorted_house = max(house_points, key=house_points.get)
     print("CONGRATULATIONS!! YOU ARE.....")
     print(sorted_house)
-    break
+
+
+    while True:
+        another_try = input("Do you wwant to sort another one?: ").lower()
+        if another_try in ["yes", "no"]:
+            break
+        else:
+            print("Invalid Choice")
+    if another_try != "yes":
+        print("COLLOPORTUS")
+        break
