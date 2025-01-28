@@ -16,15 +16,16 @@ while True:
 
         movie_genre = input("What is your favorite movie genre?: ")
 
-        if movie_genre == "action":
+        if movie_genre in ["action", "science fiction", "horror", "drama"]:
+         if movie_genre == "action":
             gryffindor += 1
-        elif movie_genre == "science fiction":
+         elif movie_genre == "science fiction":
             ravenclaw += 1
-        elif movie_genre == "horror":
+         elif movie_genre == "horror":
             slytherin += 1
-        elif movie_genre == "drama":
+         elif movie_genre == "drama":
             hufflepuff += 1  
-            break 
+         break 
         else:
             print("Choose among horror, action, science fiction, and drama only!")  
 
@@ -32,32 +33,31 @@ while True:
 
         animal = input("Which animal would you like to be a pet?: ")
 
-        if animal == "cat":
+        if animal in ["cat", "owl", "toad", "rat"]:
+         if animal == "cat":
             gryffindor += 1
-        elif animal == "owl":
+         elif animal == "owl":
             ravenclaw += 1
-        elif animal == "toad":
+         elif animal == "toad":
             slytherin += 1
-        elif animal == "rat":
+         elif animal == "rat":
             hufflepuff += 1
-            break
+         break
         else:
             print("Choose among cat, owl, toad, or cat!")
 
     while True:
-          
-        personality = input("Are you shy, confident, friendly, or arrogant?: ")
 
-        if personality == "confident":
+        personality = input("Are you shy, confident, friendly, or arrogant?: ")
+        if personality in ["confident", "shy", "arrogant", "friendly"]:
+         if personality == "confident":
             gryffindor += 1
-        elif personality == "shy":
+         elif personality == "shy":
             ravenclaw += 1
-        elif personality == "arrogant":
+         elif personality == "arrogant":
             slytherin += 1
-        elif personality == "friendly":
+         elif personality == "friendly":
             hufflepuff += 1
-            break
+         break
         else:
-            print("Choose among the given choices!")   
-    
-  
+            print("Choose among the given choices!")
