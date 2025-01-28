@@ -62,6 +62,54 @@ while True:
         else:
             print("Choose among the given choices!")
 
+    while True:
+
+        attribute = input("Do you rather be brave, smart, patient, or ambitious?: ")
+        if attribute in ["brave", "smart", "patient", "ambitious"]:
+          if attribute == "brave":
+            gryffindor += 1
+          elif attribute == "smart":
+            ravenclaw += 1
+          elif attribute == "ambitious":
+            slytherin += 1
+          elif attribute == "patient":
+            hufflepuff += 1
+          break  
+        else:
+            print("Choose among the choices!") 
+
+    while True:
+
+        quidditch = input("Which position would you most likely to play? bludger, keeper, seeker, or chaser: ")
+        if quidditch in ["bludger", "keeper", "seeker", "chaser"]:
+          if quidditch == "bludger":
+            gryffindor += 1
+          if quidditch == "keeper":
+            ravenclaw += 1
+          if quidditch == "seeker":
+            slytherin += 1
+          if quidditch == "chaser":
+            hufflepuff += 1
+          break  
+        else:
+            print("Choose among the choices!")
+
+    while True:
+
+        character = input("Who would you rather be? Snape, Cedric, Hagrid, or Luna?: ")
+        if character in ["hagrid", "Luna", "Snape", "Cedric"]:
+          if character == "hagrid":
+            gryffindor += 1
+          if character == "Luna":
+            ravenclaw += 1
+          if character == "Snape":
+            slytherin += 1
+          if character == "Cedric":
+            hufflepuff += 1
+          break  
+        else:
+            print("Choose among the choices!")                                              
+
     house_points = {
         "Gryffindor": gryffindor,
         "Ravenclaw": ravenclaw,
