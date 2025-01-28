@@ -105,13 +105,13 @@ with open("hogwarts_house_result.txt", "a") as file:
       character = input("Who would you rather be? Snape, Cedric, Hagrid, or Luna?: ").capitalize()
 
       if character in ["hagrid", "Luna", "Snape", "Cedric"]:
-        if character == "Hagrid":
+        if character == "hagrid":
           gryffindor += 1
-        if character == "Luna":
+        if character == "luna":
           ravenclaw += 1
-        if character == "Snape":
+        if character == "snape":
           slytherin += 1
-        if character == "Cedric":
+        if character == "cedric":
           hufflepuff += 1
         file.write(f"Fave character: {character}\n")
         break  
@@ -138,6 +138,8 @@ with open("hogwarts_house_result.txt", "a") as file:
             print("Invalid Choice")
     if another_try != "yes":
         print("COLLOPORTUS")
+        exiting = "EXITING"
+        print(exiting.center(30, "-"))
         break
       
         
